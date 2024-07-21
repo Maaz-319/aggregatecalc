@@ -11,7 +11,8 @@ function calculateCost() {
     var test = document.getElementById("test-perc").value;
     var metric_t = $("#metric-tot").val();
     var fsc_t = $("#fsc-tot").val();
-    var r = (metric / metric_t) * 100 * 0.1 + (fsc / fsc_t) * 100 * 0.15 + (test / 100) * 100 * 0.75;
+    var test_t = $("#test-t").val();
+    var r = (metric / metric_t) * 100 * 0.1 + (fsc / fsc_t) * 100 * 0.15 + (test / test_t) * 100 * 0.75;
     r = r.toFixed(2);
     $('#result').html("Your Aggregate: " + r);
 }
