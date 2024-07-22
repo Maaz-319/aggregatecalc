@@ -11,9 +11,9 @@ function calculateCost() {
     var test = document.getElementById("test-perc").value;
     var metric_t = $("#metric-tot").val();
     var fsc_t = $("#fsc-tot").val();
-    var obtained_marks = (metric / 4) + fsc;
-    var total_marks = (metric_t / 4) + fsc_t;
-    var academic_percentage = (obtained_marks / total_marks) * 0.75 * 100;
+    var obtained_marks = (metric / 4) + (fsc/1);
+    var total_marks = (metric_t / 4) + (fsc_t/1);
+    var academic_percentage = (obtained_marks / total_marks) * 75;
     var usat_total = parseInt(test) * 0.25;
     var r = (academic_percentage + usat_total);
     r = r.toFixed(2);
